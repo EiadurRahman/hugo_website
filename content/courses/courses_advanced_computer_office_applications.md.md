@@ -1,6 +1,9 @@
 +++
+title = "Courses advanced computer office applications" 
+date = "2024-08-01T21:29:20" 
 banner = "img/courses_img/microsoft_office.webp"
 +++
+
 
 **কোর্সের নাম:** এডভান্সড কম্পিউটার অফিস অ্যাপ্লিকেশন  
 **মেয়াদ:** ৬ মাস

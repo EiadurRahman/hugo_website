@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            background-image: url('/img/backgound/texture-bw.png');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #7ee4f6;
+        }
+        .search-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(216, 239, 243, 0.9);
+            border: 2px solid #acacac;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #010f11;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #010f11;
+            border-radius: 6px;
+            background-color: white;
+        }
+        button {
+            background-color: #38a7bb;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2d8695;
+        }
+        h2 {
+            color: #010f11;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h2>Search Results</h2>
+        <form action="/search" method="GET">
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" min="2000" max="2099" required>
+                
+            </div>
+            <div class="form-group">
+                <label for="class">Class:</label>
+                <select id="class" name="class" required>
+                    <option value="" selected disabled hidden>Select a class</option>
+                    <option value="classA">Class A</option>
+                    <option value="classB">Class B</option>
+                    <option value="classC">Class C</option>
+                    <option value="classA">Class D</option>
+                    <option value="classB">Class E</option>
+                    <option value="classC">Class F</option>
+                </select>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>

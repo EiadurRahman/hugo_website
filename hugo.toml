@@ -1,4 +1,4 @@
-baseurl = "https://localhost" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
+baseurl = "https://localhost/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
 title = "Next World Computer & Training Institute"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
@@ -29,27 +29,34 @@ pluralizelisttitles = false
     identifier = "menu.courses"
     url        = "/courses/"
     weight     = 2
+
+# Result 
+[[menu.main]]
+    identifier = "Result"
+    name       = "Result"
+    url        = "/Result/"
+    weight     = 3
     
 # notice
 [[menu.main]]
     name       = "notices"
     identifier = "menu.notices"
     url        = "/notices/"
-    weight     = 3
+    weight     = 4
 
 # contacts
 [[menu.main]]
     identifier = "contact"
     name       = "Contact"
     url        = "/contact/"
-    weight     = 4
+    weight     = 5
 
 # faq
 [[menu.main]]
     name       = "FAQ"
     identifier = "menu.faq"
     url        = "/faq/"
-    weight     = 5
+    weight     = 6
 
 
 
@@ -67,6 +74,8 @@ pluralizelisttitles = false
     logo_small = "img/banners/logo.jpg"
 
     dropdown_mouse_over = false
+    # Format dates with Go's time formatting
+    date_format = "January 2, 2006"
     
     about_us = """<p><h6>Next World Computer & Training Institute</h6> is a government-subsidized center focused on reducing unemployment by providing essential computer skills.
     It offers practical training in using Microsoft Office and other basic IT tools, 
@@ -121,3 +130,7 @@ summaryLength = 20
     enable = true
 
     
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

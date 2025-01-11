@@ -70,8 +70,8 @@ pluralizelisttitles = false
     disabled_logo = false
     logo_text = "Next World Computer & Training Institute"
 
-    logo = "img/banners/no_background_logo.png"
-    logo_small = "img/banners/no_background_logo.png"
+    logo = "img/banners/Next World IT CTI.png"
+    logo_small = "img/banners/Next World IT CTI.png"
 
 dropdown_mouse_over = false
 # Format dates with Go's time formatting
@@ -83,10 +83,9 @@ date_format = "January 2, 2006"
     
     contact_url = "/contact"
     address = """<p class="text-uppercase"><strong>Next World Computer & Training Institute</strong>
-        <br>Shek Market,
-        <br>Nazu miah hat,
-        <br>Hathazari,
-        <br>Chattogram
+        <br>Shek Market, Nazu miah hat, Hathazari, Chattogram
+        <br>
+        <br> Phone: 01973-472069, 01706-412179   
         <br>
         <strong>Bangladesh</strong>
       </p>
@@ -130,6 +129,8 @@ summaryLength = 20
     enable = true
 
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
       unsafe = true
-
       tables = true
